@@ -1,0 +1,6 @@
+{
+  "source": "snap",
+  "fp_features": "data/raw/cora/cora.content",
+  "fp_edges": "data/raw/cora/cora.cites",
+  "outpath": "data/out/filename.csv"
+}
