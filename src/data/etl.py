@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def get_summary(file):
-    if source == 'cora':
+    if source == 'snap':
         G = nx.read_edgelist(file, create_using=nx.DiGraph(), nodetype = int)
         lst = list(nx.info(G).split("\n"))
 
