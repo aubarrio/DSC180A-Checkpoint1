@@ -4,6 +4,25 @@ import networkx as nx
 import numpy as np
 import matplotlib.pyplot as plt
 
+def get_summary(file):
+    if source == 'cora':
+        G = nx.read_edgelist(file, create_using=nx.DiGraph(), nodetype = int)
+        lst = list(nx.info(G).split("\n"))
+
+        indices = [x.split(":")[0] for x in lst]
+        indices.inser(len(indices) "Network Diameter")
+        indices.insert(len(indices), "Average Path Length")
+        indices.inser(len(indices), "Average Cluster Coeff")
+
+        values = [x.split(":")[1] for x in lst]
+        values.insert(len(vals), "Infinite")
+        values.insert(len(vals)), str(nx.average_shortest_path_length(G)))
+        values.insert(len(vals), str(nx.average_clustering(G)))
+
+        d = {"Category": idx, "Values": vals}
+        df = pd.DataFrame(vals, index = idx, columsn = ['value'])
+    return df
+
 def read_edges(source, path):
     """
     Reads in edge data
