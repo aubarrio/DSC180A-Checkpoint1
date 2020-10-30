@@ -62,4 +62,6 @@ def complete(source, fp_features, fp_edges, outpath):
     plt.figure(figsize=(10,10))
     nx.draw(G, node_size=10, edge_size=1)
     plt.show()
+    fig = plt.figure()
+    fig.savefig('test.png')
     return -1

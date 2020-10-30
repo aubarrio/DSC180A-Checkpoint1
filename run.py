@@ -24,3 +24,8 @@ def main():
 if __name__ == '__main__':
     targets = sys.argv[1:]
     main()
+
+
+# python run.py data/raw/twitch/ENGB/musae_ENGB_features.json data/raw/twitch/ENGB/musae_ENGB_edges.csv
+
+#make sure to change to snap instead of cora
